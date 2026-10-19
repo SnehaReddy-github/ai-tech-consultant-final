@@ -1,0 +1,706 @@
+[
+  {
+    "emailId": "email-1",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-2",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-3",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-4",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-5",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-6",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-7",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-8",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-9",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-10",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-11",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-12",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-13",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-14",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-15",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-16",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-17",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-18",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-19",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-1",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-2",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-3",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-4",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-5",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-6",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-7",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-8",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-9",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-10",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-11",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-12",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-13",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-14",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-15",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-16",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-17",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-18",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-19",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-20",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-1",
+    "kind": "sales",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-2",
+    "kind": "sales",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-3",
+    "kind": "sales",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-4",
+    "kind": "sales",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-5",
+    "kind": "sales",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-6",
+    "kind": "sales",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, I changed this reply.",
+    "approvedWithoutChanges": false,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-1",
+    "kind": "pricing",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-2",
+    "kind": "pricing",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-3",
+    "kind": "pricing",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-4",
+    "kind": "pricing",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-5",
+    "kind": "pricing",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-6",
+    "kind": "pricing",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-7",
+    "kind": "pricing",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-8",
+    "kind": "pricing",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-9",
+    "kind": "pricing",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-10",
+    "kind": "pricing",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-11",
+    "kind": "pricing",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-12",
+    "kind": "pricing",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-13",
+    "kind": "pricing",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-14",
+    "kind": "pricing",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-15",
+    "kind": "pricing",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-16",
+    "kind": "pricing",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-17",
+    "kind": "pricing",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-18",
+    "kind": "pricing",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-19",
+    "kind": "pricing",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-20",
+    "kind": "pricing",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-21",
+    "kind": "pricing",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 0.5
+  },
+  {
+    "emailId": "email-1",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-2",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-3",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-4",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-5",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-6",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-7",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-8",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-9",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-10",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-11",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-12",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-13",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-14",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-15",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-16",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-17",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-18",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-19",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-20",
+    "kind": "support",
+    "originalDraft": "Hello, thank you for your email.",
+    "finalDraft": "Hello, thank you for your email.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 1
+  },
+  {
+    "emailId": "email-002",
+    "kind": "pricing",
+    "originalDraft": "Hello, thank you for your enquiry.",
+    "finalDraft": "Hello, thank you for your enquiry.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 0.95
+  },
+  {
+    "emailId": "email-002",
+    "kind": "pricing",
+    "originalDraft": "Hello, thank you for your enquiry.",
+    "finalDraft": "Hello, thank you for your enquiry.",
+    "approvedWithoutChanges": true,
+    "qualityScore": 0.95
+  }
+]

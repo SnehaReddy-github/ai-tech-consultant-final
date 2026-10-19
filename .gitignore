@@ -1,0 +1,17 @@
+﻿.venv/
+**/__pycache__/
+**/*.py[cod]
+.pytest_cache/
+**/node_modules/
+.env
+.env.*
+!.env.example
+*.log
+*.db
+*.db-wal
+*.db-shm
+ocr_test.png
+check_article.py
+check_images.py
+check_links.py
+inspect_database.py

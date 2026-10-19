@@ -1,0 +1,23 @@
+
+{
+  "name": "ai-tech-consultant-inbox-agent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Email classification, drafting, feedback learning, and safe auto-send rules",
+  "scripts": {
+    "start": "tsx src/server.ts",
+    "dev": "tsx watch src/server.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.15.30",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}

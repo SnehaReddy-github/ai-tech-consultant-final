@@ -1,0 +1,365 @@
+
+{
+  "dataset_name": "Inbox Agent Realistic Email Evaluation Dataset",
+  "version": "1.0",
+  "description": "50 fictional emails for evaluating Inbox Agent classification and draft generation.",
+  "categories": [
+    "support",
+    "pricing",
+    "sales",
+    "meeting",
+    "general"
+  ],
+  "emails": [
+    {
+      "id": "E001",
+      "from": "maya.patel@example.org",
+      "subject": "Login page shows an error",
+      "body": "I cannot sign in to our dashboard. After entering my password, the page displays a 500 error.",
+      "expectedKind": "support"
+    },
+    {
+      "id": "E002",
+      "from": "daniel.brooks@example.org",
+      "subject": "Reports are not loading",
+      "body": "The monthly reports page keeps spinning and never opens. I tried another browser but the issue remains.",
+      "expectedKind": "support"
+    },
+    {
+      "id": "E003",
+      "from": "aisha.khan@example.org",
+      "subject": "CSV export fails",
+      "body": "When I export contacts to CSV, I receive a download failed message. Can you help me troubleshoot?",
+      "expectedKind": "support"
+    },
+    {
+      "id": "E004",
+      "from": "ravi.kumar@example.org",
+      "subject": "Password reset link expired",
+      "body": "I requested a password reset, but the link says it has expired even though I opened it immediately.",
+      "expectedKind": "support"
+    },
+    {
+      "id": "E005",
+      "from": "elena.garcia@example.org",
+      "subject": "Dashboard displays incorrect totals",
+      "body": "The dashboard total is different from the number shown in the detailed records. Please advise how to investigate.",
+      "expectedKind": "support"
+    },
+    {
+      "id": "E006",
+      "from": "noah.wilson@example.org",
+      "subject": "Cannot upload a profile image",
+      "body": "The upload button accepts the file but then shows an error. The image is a JPG under 2 MB.",
+      "expectedKind": "support"
+    },
+    {
+      "id": "E007",
+      "from": "priya.shah@example.org",
+      "subject": "Notifications stopped arriving",
+      "body": "Email notifications stopped arriving yesterday. I checked spam and confirmed the notification setting is enabled.",
+      "expectedKind": "support"
+    },
+    {
+      "id": "E008",
+      "from": "oliver.smith@example.org",
+      "subject": "Mobile layout is broken",
+      "body": "On my phone, the save button is hidden behind the footer and I cannot save the form.",
+      "expectedKind": "support"
+    },
+    {
+      "id": "E009",
+      "from": "fatima.ali@example.org",
+      "subject": "Integration returns an API error",
+      "body": "Our integration started returning HTTP 401 responses today. The token was working last week.",
+      "expectedKind": "support"
+    },
+    {
+      "id": "E010",
+      "from": "ethan.chen@example.org",
+      "subject": "Duplicate records after import",
+      "body": "After importing our spreadsheet, several contacts appear twice. What is the safest way to resolve this?",
+      "expectedKind": "support"
+    },
+    {
+      "id": "E011",
+      "from": "sofia.martin@example.org",
+      "subject": "Change my account email",
+      "body": "I need to update the email address associated with my account. Could you point me to the correct settings?",
+      "expectedKind": "support"
+    },
+    {
+      "id": "E012",
+      "from": "arjun.reddy@example.org",
+      "subject": "Feature appears unavailable",
+      "body": "I followed the help instructions, but the bulk-edit option is not visible in my account.",
+      "expectedKind": "support"
+    },
+    {
+      "id": "E013",
+      "from": "grace.lee@example.org",
+      "subject": "Application closes when saving",
+      "body": "The application closes when I click Save. I can reproduce it on two computers.",
+      "expectedKind": "support"
+    },
+    {
+      "id": "E014",
+      "from": "lucas.brown@example.org",
+      "subject": "Slow page response",
+      "body": "The customer list takes around 30 seconds to load today. It usually opens in a few seconds.",
+      "expectedKind": "support"
+    },
+    {
+      "id": "E015",
+      "from": "meera.iyer@example.org",
+      "subject": "Invoice download fails",
+      "body": "Clicking Download invoice gives me a blank page. I need the invoice for our records.",
+      "expectedKind": "support"
+    },
+    {
+      "id": "E016",
+      "from": "james.taylor@example.org",
+      "subject": "Pricing for a small team",
+      "body": "We are a team of six and are evaluating your service. Could you share the available plans and pricing?",
+      "expectedKind": "pricing"
+    },
+    {
+      "id": "E017",
+      "from": "ananya.rao@example.org",
+      "subject": "Request for an annual quote",
+      "body": "Please provide an annual quote for 25 users, including any volume discounts and applicable taxes.",
+      "expectedKind": "pricing"
+    },
+    {
+      "id": "E018",
+      "from": "benjamin.clark@example.org",
+      "subject": "Question about renewal cost",
+      "body": "Our subscription renews next month. Will the renewal price be the same as our current contract?",
+      "expectedKind": "pricing"
+    },
+    {
+      "id": "E019",
+      "from": "kavya.nair@example.org",
+      "subject": "Is there a free plan?",
+      "body": "I am testing options for a small nonprofit. Do you offer a free tier or a trial before payment?",
+      "expectedKind": "pricing"
+    },
+    {
+      "id": "E020",
+      "from": "william.davis@example.org",
+      "subject": "Additional user charges",
+      "body": "How much does it cost to add five more users halfway through our billing period?",
+      "expectedKind": "pricing"
+    },
+    {
+      "id": "E021",
+      "from": "sneha.verma@example.org",
+      "subject": "Invoice payment options",
+      "body": "Could you confirm which payment methods are accepted for subscription invoices?",
+      "expectedKind": "pricing"
+    },
+    {
+      "id": "E022",
+      "from": "michael.moore@example.org",
+      "subject": "Enterprise pricing discussion",
+      "body": "We need pricing for approximately 300 employees and would like to understand enterprise licensing.",
+      "expectedKind": "pricing"
+    },
+    {
+      "id": "E023",
+      "from": "divya.menon@example.org",
+      "subject": "Request for revised quotation",
+      "body": "Could you revise quotation Q-104 to include onboarding for two departments?",
+      "expectedKind": "pricing"
+    },
+    {
+      "id": "E024",
+      "from": "henry.walker@example.org",
+      "subject": "Cancellation and final bill",
+      "body": "If we cancel at the end of this month, will there be any additional fees on the final invoice?",
+      "expectedKind": "pricing"
+    },
+    {
+      "id": "E025",
+      "from": "pooja.gupta@example.org",
+      "subject": "Compare monthly and yearly plans",
+      "body": "Please explain the cost difference between monthly billing and paying for a full year upfront.",
+      "expectedKind": "pricing"
+    },
+    {
+      "id": "E026",
+      "from": "charlotte.hall@example.org",
+      "subject": "Interested in a product demo",
+      "body": "Our operations team is interested in your platform. Can we arrange a 30-minute demo next week?",
+      "expectedKind": "sales"
+    },
+    {
+      "id": "E027",
+      "from": "aditya.singh@example.org",
+      "subject": "Evaluating your solution",
+      "body": "We are comparing three vendors and would like to learn how your solution handles multi-team workflows.",
+      "expectedKind": "sales"
+    },
+    {
+      "id": "E028",
+      "from": "amelia.young@example.org",
+      "subject": "Request for product brochure",
+      "body": "Could you send an overview of the product features and the main benefits for a growing business?",
+      "expectedKind": "sales"
+    },
+    {
+      "id": "E029",
+      "from": "vikram.joshi@example.org",
+      "subject": "Planning a purchase",
+      "body": "We expect to select a vendor this quarter. What information do you need to prepare a proposal for us?",
+      "expectedKind": "sales"
+    },
+    {
+      "id": "E030",
+      "from": "harper.king@example.org",
+      "subject": "Partner enquiry",
+      "body": "Our consultancy works with small businesses and we would like to discuss a potential partnership.",
+      "expectedKind": "sales"
+    },
+    {
+      "id": "E031",
+      "from": "rahul.das@example.org",
+      "subject": "Does your platform support our use case?",
+      "body": "We need to manage several regional teams with separate permissions. Is this something your product supports?",
+      "expectedKind": "sales"
+    },
+    {
+      "id": "E032",
+      "from": "mia.scott@example.org",
+      "subject": "Follow-up after product demo",
+      "body": "Thank you for the demonstration. Could we schedule a follow-up to discuss implementation and onboarding?",
+      "expectedKind": "sales"
+    },
+    {
+      "id": "E033",
+      "from": "kiran.babu@example.org",
+      "subject": "Request for a trial account",
+      "body": "Our team would like to test the main features with sample data before making a purchase decision.",
+      "expectedKind": "sales"
+    },
+    {
+      "id": "E034",
+      "from": "isabella.green@example.org",
+      "subject": "Information for procurement",
+      "body": "Please share the product overview and the details our procurement team should review before vendor approval.",
+      "expectedKind": "sales"
+    },
+    {
+      "id": "E035",
+      "from": "sai.teja@example.org",
+      "subject": "Interested in upgrading",
+      "body": "We currently use the basic plan and want to explore the advanced features available in the higher-tier plan.",
+      "expectedKind": "sales"
+    },
+    {
+      "id": "E036",
+      "from": "emma.baker@example.org",
+      "subject": "Schedule a discovery call",
+      "body": "Would your team be available for a discovery call on Tuesday or Wednesday afternoon?",
+      "expectedKind": "meeting"
+    },
+    {
+      "id": "E037",
+      "from": "sandeep.kumar@example.org",
+      "subject": "Reschedule tomorrow's meeting",
+      "body": "I have a conflict tomorrow morning. Could we move our scheduled meeting to Thursday after 2 PM?",
+      "expectedKind": "meeting"
+    },
+    {
+      "id": "E038",
+      "from": "lily.adams@example.org",
+      "subject": "Confirm calendar invitation",
+      "body": "I received the calendar invite for Friday. Please confirm that the meeting is still planned for 11 AM.",
+      "expectedKind": "meeting"
+    },
+    {
+      "id": "E039",
+      "from": "manoj.rao@example.org",
+      "subject": "Available appointment times",
+      "body": "Could you share your available time slots next week for a project discussion?",
+      "expectedKind": "meeting"
+    },
+    {
+      "id": "E040",
+      "from": "zoe.nelson@example.org",
+      "subject": "Agenda for our meeting",
+      "body": "Before our meeting, can we reserve time to discuss milestones, owners, and open risks?",
+      "expectedKind": "meeting"
+    },
+    {
+      "id": "E041",
+      "from": "ishaan.mehta@example.org",
+      "subject": "Meeting link missing",
+      "body": "The calendar event does not include a video call link. Could you send the correct joining details?",
+      "expectedKind": "meeting"
+    },
+    {
+      "id": "E042",
+      "from": "ava.mitchell@example.org",
+      "subject": "Cancel today's appointment",
+      "body": "I need to cancel today's appointment due to an unexpected commitment. Please let me know if I should rebook.",
+      "expectedKind": "meeting"
+    },
+    {
+      "id": "E043",
+      "from": "nikhil.rao@example.org",
+      "subject": "Set up a project review",
+      "body": "Can we schedule a project review with the implementation team sometime early next week?",
+      "expectedKind": "meeting"
+    },
+    {
+      "id": "E044",
+      "from": "ella.perez@example.org",
+      "subject": "Confirming our time zone",
+      "body": "The invite says 3 PM, but I am in India Standard Time. Could you confirm the time zone for the meeting?",
+      "expectedKind": "meeting"
+    },
+    {
+      "id": "E045",
+      "from": "yash.patel@example.org",
+      "subject": "Request for a short call",
+      "body": "Would someone be available for a quick 15-minute call to clarify two points from our last discussion?",
+      "expectedKind": "meeting"
+    },
+    {
+      "id": "E046",
+      "from": "david.turner@example.org",
+      "subject": "Thank you for the update",
+      "body": "Thanks for sharing the update. I will review it with my team and get back to you if we have questions.",
+      "expectedKind": "general"
+    },
+    {
+      "id": "E047",
+      "from": "nandini.rao@example.org",
+      "subject": "New coordinator contact details",
+      "body": "Our project coordinator has changed. Please update your records to use coordinator@example.org for future correspondence.",
+      "expectedKind": "general"
+    },
+    {
+      "id": "E048",
+      "from": "samuel.reed@example.org",
+      "subject": "Sharing the signed document",
+      "body": "I have attached the signed agreement for your records. Please confirm once it has been received.",
+      "expectedKind": "general"
+    },
+    {
+      "id": "E049",
+      "from": "keerthi.lakshmi@example.org",
+      "subject": "Copy of the presentation",
+      "body": "Could you share the presentation from last week's workshop with the participants?",
+      "expectedKind": "general"
+    },
+    {
+      "id": "E050",
+      "from": "jack.robinson@example.org",
+      "subject": "General question about your team",
+      "body": "Who would be the best person to contact about a possible collaboration with our organization?",
+      "expectedKind": "general"
+    }
+  ]
+}
