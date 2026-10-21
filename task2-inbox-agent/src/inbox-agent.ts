@@ -1,5 +1,10 @@
 
-export type EmailKind = "support" | "pricing" | "sales" | "meeting" | "general";
+export type EmailKind =
+  | "support"
+  | "pricing"
+  | "sales"
+  | "meeting"
+  | "general";
 
 export interface IncomingEmail {
   id: string;
@@ -22,9 +27,18 @@ export interface DraftResult {
   needsHumanReview: boolean;
 }
 
+interface KnowledgeSource {
+  id?: number;
+  title?: string;
+  url?: string;
+}
+
 interface KnowledgeResponse {
   answer?: string;
-  sources?: string[];
+  sources?: Array<string | KnowledgeSource>;
+  status?: string;
+  needs_human_review?: boolean;
+  mode?: string;
 }
 
 const RULES: Record<Exclude<EmailKind, "general">, string[]> = {
@@ -50,7 +64,36 @@ const RULES: Record<Exclude<EmailKind, "general">, string[]> = {
     "login problem",
     "not loading",
     "failed to load",
+    "fails",
+    "failure",
+    "expired",
+    "password reset",
+    "incorrect totals",
+    "notifications stopped",
+    "duplicate records",
+    "application closes",
+    "slow page",
+    "export",
+    "import",
+    "stopped arriving",
+    "download fails",
+    "access problem",
+    "trouble accessing",
+    "keeps crashing",
+    "doesn't load",
+    "manage member accounts",
+    "member account",
+    "manage members",
+    "account management",
+    "how do i manage",
+    "how to manage member",
+    "change my account email",
+    "change account email",
+    "update my account email",
+    "change email address",
+    "update email address",
   ],
+
   pricing: [
     "price",
     "pricing",
@@ -59,10 +102,21 @@ const RULES: Record<Exclude<EmailKind, "general">, string[]> = {
     "subscription fee",
     "plan options",
     "quote",
+    "quotation",
     "discount",
     "billing",
     "invoice",
+    "free plan",
+    "subscription",
+    "renewal",
+    "additional charges",
+    "yearly cost",
+    "annual cost",
+    "revised quotation",
+    "payment",
+    "upgrade cost",
   ],
+
   sales: [
     "interested in your product",
     "purchase",
@@ -74,7 +128,24 @@ const RULES: Record<Exclude<EmailKind, "general">, string[]> = {
     "sign up",
     "business partnership",
     "partnership opportunity",
+    "evaluating your solution",
+    "product brochure",
+    "partner enquiry",
+    "partner inquiry",
+    "potential collaboration",
+    "collaboration",
+    "procurement",
+    "interested in upgrading",
+    "learn about your product",
+    "product demonstration",
+    "business requirements",
+    "interested in your platform",
+    "solution for our company",
+    "does your platform support",
+    "support our use case",
+    "platform support our use case",
   ],
+
   meeting: [
     "meeting",
     "schedule a call",
@@ -86,6 +157,15 @@ const RULES: Record<Exclude<EmailKind, "general">, string[]> = {
     "let's talk",
     "lets talk",
     "reschedule",
+    "discovery call",
+    "project review",
+    "set up a call",
+    "arrange a call",
+    "short call",
+    "schedule a meeting",
+    "move our discussion",
+    "joining details",
+    "calendar invitation",
   ],
 };
 
@@ -98,10 +178,43 @@ const STRONG_SUPPORT_PHRASES = [
   "dashboard is broken",
   "dashboard issue",
   "technical issue",
+  "password reset",
+  "csv export",
+  "export fails",
+  "export problem",
+  "application closes",
+  "duplicate records",
+  "notifications stopped",
+  "manage member accounts",
+  "member account",
+  "manage members",
+  "account management",
+  "how do i manage",
+  "how to manage member",
+  "change my account email",
+  "change account email",
+  "update my account email",
+  "change email address",
+  "update email address",
 ];
 
-export function classifyEmail(email: IncomingEmail): ClassificationResult {
+export function classifyEmail(
+  email: IncomingEmail,
+): ClassificationResult {
   const text = `${email.subject} ${email.body}`.toLowerCase();
+
+  // Explicit general-question rule to avoid false sales classifications.
+  if (
+    text.includes("general question") ||
+    text.includes("general inquiry") ||
+    text.includes("general enquiry")
+  ) {
+    return {
+      kind: "general",
+      confidence: 0.9,
+    };
+  }
+
   const scores: Record<EmailKind, number> = {
     support: 0,
     pricing: 0,
@@ -135,31 +248,38 @@ export function classifyEmail(email: IncomingEmail): ClassificationResult {
   const secondScore = ranked[1][1];
 
   if (bestScore === 0 || bestScore === secondScore) {
-    return { kind: "general", confidence: 0.4 };
+    return {
+      kind: "general",
+      confidence: 0.4,
+    };
   }
 
-  const confidence = Math.min(
-    0.98,
-    0.6 + (bestScore - secondScore) * 0.1,
-  );
-
-  return { kind: bestKind, confidence };
+  return {
+    kind: bestKind,
+    confidence: Math.min(
+      0.98,
+      0.6 + (bestScore - secondScore) * 0.1,
+    ),
+  };
 }
 
 async function searchKnowledge(
   email: IncomingEmail,
 ): Promise<{ answer: string; sources: string[] }> {
   const baseUrl = (
-    process.env.KNOWLEDGE_BRAIN_URL ?? "http://127.0.0.1:8001"
+    process.env.KNOWLEDGE_BRAIN_URL ??
+    "http://127.0.0.1:8002"
   ).replace(/\/+$/, "");
 
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 4000);
+  const timeout = setTimeout(() => controller.abort(), 10000);
 
   try {
     const response = await fetch(`${baseUrl}/ask`, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify({
         question: `${email.subject}\n${email.body}`,
       }),
@@ -167,20 +287,51 @@ async function searchKnowledge(
     });
 
     if (!response.ok) {
+      console.error(
+        `Knowledge Brain returned HTTP ${response.status}`,
+      );
       return { answer: "", sources: [] };
     }
 
     const data = (await response.json()) as KnowledgeResponse;
 
-    return {
-      answer: typeof data.answer === "string" ? data.answer : "",
-      sources: Array.isArray(data.sources)
-        ? data.sources.filter(
-            (source): source is string => typeof source === "string",
-          )
-        : [],
-    };
-  } catch {
+    const answer =
+      typeof data.answer === "string" &&
+      data.status !== "not_found"
+        ? data.answer
+        : "";
+
+    const sources = Array.isArray(data.sources)
+      ? data.sources
+          .map((source) => {
+            if (
+              typeof source === "string" &&
+              source.trim().length > 0
+            ) {
+              return source;
+            }
+
+            if (
+              typeof source === "object" &&
+              source !== null &&
+              typeof source.url === "string" &&
+              source.url.trim().length > 0
+            ) {
+              return `${source.title ?? "Knowledge source"}: ${source.url}`;
+            }
+
+            return "";
+          })
+          .filter((source) => source.length > 0)
+      : [];
+
+    return { answer, sources };
+  } catch (error) {
+    console.error(
+      "Knowledge Brain request failed:",
+      error instanceof Error ? error.message : error,
+    );
+
     return { answer: "", sources: [] };
   } finally {
     clearTimeout(timeout);
@@ -201,45 +352,61 @@ export async function createDraft(
       const knowledge = await searchKnowledge(email);
 
       if (knowledge.answer && knowledge.sources.length > 0) {
-        draft = knowledge.answer;
+        draft =
+          `Hello,\n\n` +
+          `Thank you for contacting our support team.\n\n` +
+          `${knowledge.answer}\n\n` +
+          `Please review the linked knowledge sources for details.\n\n` +
+          `Best regards,\nSupport Team`;
+
         sources = knowledge.sources;
       } else {
         draft =
-        `Hello,\n\nThank you for contacting us about this issue. ` +
-        `We are sorry for the inconvenience. Our team is reviewing ` +
-        `the issue and will follow up with you.\n\nBest regards,\nSupport Team`;
+          `Hello,\n\n` +
+          `Thank you for contacting us about this issue. ` +
+          `We are sorry for the inconvenience. Our team is reviewing ` +
+          `the issue and will follow up with you.\n\n` +
+          `Best regards,\nSupport Team`;
       }
       break;
     }
 
     case "pricing":
       draft =
-        `Hello,\n\nThank you for your interest in our pricing. ` +
+        `Hello,\n\n` +
+        `Thank you for your interest in our pricing. ` +
         `We would be happy to help you understand the available plans ` +
         `and pricing options. Please share any specific requirements ` +
-        `so our team can guide you.\n\nBest regards,\nSales Team`;
+        `so our team can guide you.\n\n` +
+        `Best regards,\nSales Team`;
       break;
 
     case "sales":
       draft =
-        `Hello,\n\nThank you for your interest in our solutions. ` +
+        `Hello,\n\n` +
+        `Thank you for your interest in our solutions. ` +
         `We would be happy to learn more about your requirements and ` +
-        `discuss how we may be able to help.\n\nBest regards,\nSales Team`;
+        `discuss how we may be able to help.\n\n` +
+        `Best regards,\nSales Team`;
       break;
 
     case "meeting":
       draft =
-        `Hello,\n\nThank you for reaching out. We would be happy to ` +
+        `Hello,\n\n` +
+        `Thank you for reaching out. We would be happy to ` +
         `arrange a meeting. Please share your preferred date and time, ` +
-        `and we will confirm availability.\n\nBest regards,\nTeam`;
+        `and we will confirm availability.\n\n` +
+        `Best regards,\nTeam`;
       break;
 
     case "general":
     default:
       draft =
-        `Hello,\n\nThank you for your email. We appreciate you reaching ` +
+        `Hello,\n\n` +
+        `Thank you for your email. We appreciate you reaching ` +
         `out and will review your message. Our team will follow up ` +
-        `if any further information is needed.\n\nBest regards,\nTeam`;
+        `if any further information is needed.\n\n` +
+        `Best regards,\nTeam`;
       break;
   }
 

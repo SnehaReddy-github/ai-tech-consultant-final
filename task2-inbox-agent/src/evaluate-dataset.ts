@@ -11,7 +11,7 @@ interface EmailDataset {
   emails: DatasetEmail[];
 }
 
-const datasetPath = resolve("data", "sample-emails.json");
+const datasetPath = resolve("task2-inbox-agent", "data", "sample-emails.json");
 const dataset = JSON.parse(
   readFileSync(datasetPath, "utf8"),
 ) as EmailDataset;
